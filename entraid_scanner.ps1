@@ -12,7 +12,7 @@ _____       _               ___ ____    ____                  _
 
 # Install required AzureAD module
 if (Get-Module -ListAvailable -Name Microsoft.Graph) {
-    Write-Host "`nAMicrosoft.Graph module is already installed." -ForegroundColor Green
+    Write-Host "`nMicrosoft.Graph module is already installed." -ForegroundColor Green
 } else {
     Write-Host "`nAInstalling Microsoft.Graph module..." -ForegroundColor Cyan
     Install-Module -Name Microsoft.Graph -Scope CurrentUser
@@ -78,8 +78,8 @@ $completedControls = 0
             # Clear previous progress bar line
             Write-Host "`r" -NoNewline
             # Create a simple progress bar using characters
-            $progressBar = '=' * $completedControls + ' ' * (20 - $completedControls)
-            Write-Host "Checking Control: $progressBar ($completedControls of 20): $functionTitle"
+            $progressBar = '=' * $completedControls + ' ' * (21 - $completedControls)
+            Write-Host "Checking Control: $progressBar ($completedControls of 21): $functionTitle"
 
         $currentResults = . "$scriptPath\$functionName.ps1" | Select Control, ControlDescription, Finding, OnPremisesSyncEnabled, LastSyncDateTime, DynamicGroupName, DynamicGroupTypes, DynamicGroupMembershipRule, Result
         $allResults += $currentResults  # Append results to the array

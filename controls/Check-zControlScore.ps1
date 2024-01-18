@@ -1,6 +1,7 @@
 function Check-ControlScore {
     $controlNames = @(
         'UserRiskPolicy',
+        'aad_admin_consent_workflow',
         'aad_limited_administrative_roles'
         'aad_linkedin_connection_disables',
         'aad_password_protection',
@@ -39,8 +40,8 @@ function Check-ControlScore {
         # Clear previous progress bar line
         Write-Host "`r" -NoNewline
         # Create a simple progress bar using characters
-        $progressBar = '=' * $completedControls + ' ' * (20 - $completedControls)
-        Write-Host "Checking Control: $progressBar ($completedControls of 20): $controlProfileName"
+        $progressBar = '=' * $completedControls + ' ' * (21 - $completedControls)
+        Write-Host "Checking Control: $progressBar ($completedControls of 21): $controlProfileName"
 
         $controlDescription = $controlScore.Description
         $AdditionalProperties = $controlScore.AdditionalProperties
