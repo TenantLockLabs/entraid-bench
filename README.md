@@ -1,5 +1,8 @@
 # entraid-bench: Microsoft Entra ID Security Assessment Tool
 
+![screenshot.png](screenshot.png)
+
+
 ## Overview
 
 The EntraID Bench is a PowerShell script designed to assess and enhance the security of your Microsoft Entra ID environment using the Graph API. It automates security checks to ensure compliance with CIS Microsoft 365 Foundations Benchmark 3.0.0.
