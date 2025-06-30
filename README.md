@@ -63,9 +63,6 @@ The EntraID Bench is a PowerShell script designed to assess and enhance the secu
 
 Feel free to contribute, report issues, or suggest enhancements by opening an issue.
 
-***REMOVED***
-
-***REMOVED***
 
 Thank you for using the Entra ID Security Assessment Tool!
 
